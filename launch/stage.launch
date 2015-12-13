@@ -1,6 +1,6 @@
 <launch>
     <param name="/use_sim_time" value="true"/>
-    <node pkg="stage_ros" type="stageros" name="forbot_stage" args="$(find stage_ros)/world/willow-erratic.world">
+    <node pkg="stage_ros" type="stageros" name="forbot_stage" args="$(find forbot_2dnav)/maps/willow-erratic.world">
     </node>
     <node name="rviz" pkg="rviz" type="rviz" args="-d simulation.rviz"/>
     <!--<node name="gmapping" pkg="gmapping" type="slam_gmapping" args="scan:=base_scan"/>-->
