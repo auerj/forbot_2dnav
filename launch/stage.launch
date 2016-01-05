@@ -3,10 +3,10 @@
     <node pkg="stage_ros" type="stageros" name="forbot_stage" args="$(find forbot_2dnav)/maps/willow-erratic.world">
     </node>
     <node name="rviz" pkg="rviz" type="rviz" args="-d simulation.rviz"/>
-    <!--<node name="gmapping" pkg="gmapping" type="slam_gmapping" args="scan:=base_scan"/>-->
     <node name="map_server" pkg="map_server" type="map_server" args="$(find forbot_2dnav)/maps/willow.yaml"/>
 
     <!--- Run AMCL -->
     <remap from="scan" to="base_scan"/>
-    <include file="$(find amcl)/examples/amcl_omni.launch"/>
+    <include file="$(find amcl)/examples/amcl_diff.launch"/>
+    <include file="$(find forbot_2dnav)/launch/move_base.launch"/>
 </launch>
