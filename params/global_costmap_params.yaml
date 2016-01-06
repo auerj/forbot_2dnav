@@ -1,9 +1,7 @@
 global_costmap:
   global_frame: /map
-  robot_base_frame: base_link
+  robot_base_frame: /base_link
   update_frequency: 5.0
-  static_map: false
-  plugins:
-  -
-     name: inflater
-     type: "costmap_2d::InflationLayer"
+  static_map: true
+  width: 10.0
+  height: 10.0

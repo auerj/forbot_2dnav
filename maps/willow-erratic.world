@@ -8,7 +8,7 @@ define topurg ranger
 (
   sensor(
     range [ 0.0  30.0 ]
-    fov 290.25
+    fov 270.25
     samples 1081
   )
 
@@ -69,4 +69,4 @@ floorplan
 
 # throw in a robot
 erratic( pose [ -11.277 23.266 0 180.000 ] name "era" color "blue")
-block( pose [ -13.924 25.020 0 180.000 ] color "red")
+#block( pose [ -13.924 25.020 0 180.000 ] color "red")
