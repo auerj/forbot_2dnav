@@ -5,7 +5,6 @@
     <node name="rviz" pkg="rviz" type="rviz" args="-d simulation.rviz"/>
     <node name="gmapping" pkg="gmapping" type="slam_gmapping" args="scan:=base_scan"/>
 
-    <!--- Run AMCL -->
     <remap from="scan" to="base_scan"/>
     <include file="$(find forbot_2dnav)/launch/move_base.launch"/>
 </launch>
