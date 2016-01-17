@@ -10,4 +10,6 @@
 
     <!--<remap from="scan" to="base_scan"/>
     <include file="$(find forbot_2dnav)/launch/move_base.launch"/>-->
+    <include file="$(find tug_roboterwerk_forbot)/launch/forbot_base.launch"/>
+    <include file="$(find tug_roboterwerk_forbot_teleop)/launch/teleop.launch"/>
 </launch>
