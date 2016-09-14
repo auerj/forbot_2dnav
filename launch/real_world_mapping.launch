@@ -7,7 +7,11 @@
 
     <node name="rviz" pkg="rviz" type="rviz" args="-d real_world.rviz"/>
     <node name="gmapping" pkg="gmapping" type="slam_gmapping"/>
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> e9793e02d823e90a046056259959d905e8aac12c
     <include file="$(find forbot_2dnav)/launch/move_base.launch"/>
     <include file="$(find tug_roboterwerk_forbot)/launch/forbot_base.launch"/>
     <include file="$(find tug_roboterwerk_forbot_teleop)/launch/teleop.launch"/>
