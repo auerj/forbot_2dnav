@@ -12,11 +12,6 @@ int main(int argc, char** argv){
 
   while(n.ok()){
 
-    broadcaster.sendTransform(
-      tf::StampedTransform(
-        tf::Transform(tf::Quaternion(0, 0, 0, 1), tf::Vector3(0.0, 0.0, 0.0)),
-        ros::Time::now(),"base_footprint", "base_link"));
-
     tf::Quaternion laser_quat = tf::createQuaternionFromRPY(3.1415 , 0.0, 0.0);
     broadcaster.sendTransform(
       tf::StampedTransform(
